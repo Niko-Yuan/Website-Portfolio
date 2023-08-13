@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+nav a {
+    font-size: 3em;
+}
