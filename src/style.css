@@ -158,9 +158,12 @@ svg {
 
 /* HEADER */
 .header {
-  position: fixed;
-  z-index: 1;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   margin-block-start: 20px;
+  width: calc(100% - 2rem);
+  max-width: var(--container);
 }
 
 .header__nav {
@@ -242,8 +245,8 @@ svg {
 }
 
 /*  HERO */
-
 .hero__wrapper {
+  margin-top: 200px;
   padding-bottom: 80px;
 }
 
