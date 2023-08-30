@@ -114,5 +114,4 @@
         ssAlertBoxes();
         ssAOS();
     })();
-
 })(jQuery);
