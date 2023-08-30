@@ -215,10 +215,8 @@
         </div>
     </section>
 
-    <!-- contact
-    ================================================== -->
+    <!-- TODO: make contact form work with node.js -->
     <section id="contact" class="s-contact ss-dark target-section">
-
         <div class="row heading-block" data-aos="fade-up">
             <div class="column large-full">
                 <h2 class="section-heading">Get In Touch</h2>
@@ -227,33 +225,36 @@
                 </p>
             </div>
         </div>
-
         <div class="row contact-main" data-aos="fade-up">
             <form class="column contact-form">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-                <button type="submit">Clear</button>
+                <div class="contact-input-group">
+                    <input type="text" id="contact-name" required>
+                    <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                </div>
+                <div class="contact-input-group">
+                    <input type="email" id="contact-email" required>
+                    <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+                </div>
+                <div class="contact-input-group">
+                    <textarea id="contact-message" rows="4" required></textarea>
+                    <label for="message"><i class="fas fa-comments"></i> Your Message</label>
+                </div>
+                <button id="contact-submit" type="submit">Send<i class="fas fa-paper-plane"></i></button>
             </form>
         </div>
     </section>
-
     <footer>
         <div class="row">
             <div class="column large-full ss-copyright">
                 <span>© Copyright Fangqi Yuan 2023</span> 
             </div>            
-
             <div class="ss-go-top">
                 <a class="smoothscroll" title="Back to Top" href="#top"></a>
             </div>
         </div>
     </footer>
-
-    <!-- Java Script
-    ================================================== -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="js/smtp.js"></script>
     <script src="js/main.js"></script>
 </body>
