@@ -1759,6 +1759,112 @@ input::-moz-focus-inner {
   margin-top: 5rem;
 }
 
+.cta-btn {
+  z-index: 1;
+  padding: .8rem 1.6rem;
+  font-weight: bold;
+  line-height: 1;
+  transition: all .6s cubic-bezier(.19, 1, .22, 1);
+  display: inline-block;
+  position: relative;
+}
+
+.cta-btn:after {
+  content: "";
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: all .3s cubic-bezier(.19, 1, .22, 1);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.cta-btn--hero {
+  color: #00cdac;
+  -webkit-text-fill-color: #00cdac;
+  border: 2px solid #0000;
+  border-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%) 1;
+}
+
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .cta-btn--hero {
+    background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0000;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  .cta-btn--hero {
+    color: #00cdac !important;
+  }
+
+  .cta-btn--hero:hover {
+    color: #fff !important;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .cta-btn--hero {
+    -webkit-text-fill-color: #00cdac;
+    background-image: none;
+    border: 2px solid #00cdac;
+  }
+}
+
+.cta-btn--hero:after {
+  background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+}
+
+@media (max-width: 37.5em) {
+  .cta-btn--hero:after {
+    background-image: none;
+  }
+}
+
+.cta-btn--hero:hover {
+  -webkit-text-fill-color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 37.5em) {
+  .cta-btn--hero:hover {
+    -webkit-text-fill-color: #00cdac;
+  }
+}
+
+.cta-btn--hero:hover:after {
+  width: 100%;
+}
+
+.text-color-main {
+  color: #00cdac;
+  -webkit-text-fill-color: #00cdac;
+}
+
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .text-color-main {
+    background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0000;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .text-color-main {
+    -webkit-text-fill-color: #00cdac;
+    background-image: none;
+  }
+}
+
+.text-color-main:hover {
+  transform: translateX(2px);
+}
+
 @media screen and (max-width:1200px) {
   .project-wrapper__image {
     margin-top: 2rem;
