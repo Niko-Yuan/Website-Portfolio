@@ -1,0 +1,19 @@
+{
+  "name": "website-portfolio",
+  "version": "1.0.0",
+  "description": "A website portfolio",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niko-Yuan/Website-Portfolio.git"
+  },
+  "author": "Fangqi Yuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Niko-Yuan/Website-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Niko-Yuan/Website-Portfolio#readme"
+}
