@@ -6,7 +6,6 @@ html {
   html {
     font-size: 9.411764705882353px;
   }
-
 }
 
 html,
@@ -1880,9 +1879,9 @@ input::-moz-focus-inner {
   margin: 0 .4rem;
 }
 
-.item-folio__caption {
+/* .item-folio__caption {
   display: none;
-}
+} */
 
 /* ------------------------------------------------------------------- 
  * responsive:
