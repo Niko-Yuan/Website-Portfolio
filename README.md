@@ -8,6 +8,10 @@ It is Fangqi Yuan's website portfolio. It is made by jQuery, HTML, and CSS.
 
 ### Skills
 
+![Skill 1](/images/skill-icon/skill1.png)
+![Skill 2](/images/skill-icon/skill2.png)
+![Skill 3](/images/skill-icon/skill3.png)
+
 ### Socials
 
 <div id="badges">
